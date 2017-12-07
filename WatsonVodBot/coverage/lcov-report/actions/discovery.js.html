@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for actions/discovery.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">actions/</a> discovery.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75.68% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>28/37</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">87.5% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>7/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75.68% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>28/37</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+  *
+  * Format and send request to Watson Discovery service if marked as necessary.
+  *
+  * @param {object} params - the parameters.
+  * @param {string} params.username - default parameter, must be set. The username for Discovery service.
+  * @param {string} params.password - default parameter, must be set. The password for Discovery service.
+  * @param {string} params.environment_id - default parameter, must be set. The environment_id for Discovery service.
+  * @param {string} params.collection_id - default parameter, must be set. The collection_id for Discovery service
+  * @param {string} params.input - input text to be sent to Discovery service.
+  * @param {string} params.output - the output of the Conversation service results
+  *
+  * @return {object} the JSON of Discovery's response, or the original JSON if discovery was not called.
+  *
+  */
+const assert = require('assert');
+const DiscoveryV1 = require('watson-developer-cloud/discovery/v1');
+&nbsp;
+function main(params) {
+  return new Promise(function (resolve, reject) {
+    assert(params, 'params cannot be null');
+    assert(params.username, 'params.username cannot be null');
+    assert(params.password, 'params.password cannot be null');
+    assert(params.environment_id, 'params.environment_id cannot be null');
+    assert(params.collection_id, 'params.collection_id cannot be null');
+    assert(params.input, 'params.input cannot be null');
+    assert(params.output, 'params.output cannot be null');
+&nbsp;
+    //Make Discovery request only if Conversation output includes a "call discovery" property
+    if(params.output.hasOwnProperty('action') &amp;&amp; params.output.action.hasOwnProperty('call_discovery')) {
+&nbsp;
+      var discovery = new DiscoveryV1({
+        username: params.username,
+        password: params.password,
+        version_date: '2016-12-01'
+      });
+            
+      console.log('DiscoveryV! Call!');
+      console.log(params.input);
+&nbsp;
+      discovery.query({environment_id: params.environment_id,
+        collection_id: params.collection_id,
+        query: params.input.text
+      }, function(err, data) {
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (err) {
+<span class="cstat-no" title="statement not covered" >          return reject(err);</span>
+        }
+&nbsp;
+        var i = 0;
+        var discoveryResults = [];
+&nbsp;
+        while (data.results[i] &amp;&amp; i &lt; 3 ) {
+          let body = data.results[i].movieListResult.movieList[0].movieNm;
+<span class="cstat-no" title="statement not covered" >          discoveryResults[i] = {</span>
+            body: body,
+            movieNm: data.results[i].movieListResult.movieList[0].movieNm,
+            movieNmEn:data.results[i].movieListResult.movieList[0].movieNmEn,
+	    title: data.results[i].movieListResult.movieList[0].movieNmEn
+          };
+<span class="cstat-no" title="statement not covered" >          i++;</span>
+        }
+                
+<span class="cstat-no" title="statement not covered" >        console.log(discoveryResults);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        params.output.discoveryResults = discoveryResults;</span>
+<span class="cstat-no" title="statement not covered" >        var conversationWithData = params;</span>
+<span class="cstat-no" title="statement not covered" >        delete conversationWithData.username;</span>
+<span class="cstat-no" title="statement not covered" >        delete conversationWithData.password;</span>
+<span class="cstat-no" title="statement not covered" >        return resolve(conversationWithData);</span>
+      });
+    } else {
+      let returnJson = params;
+      delete returnJson.environment_id;
+      delete returnJson.collection_id;
+      delete returnJson.username;
+      delete returnJson.password;
+      return resolve(params);
+    }
+  });
+}
+&nbsp;
+module.exports.main = main;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Nov 22 2017 15:15:12 GMT+0900 (KST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
